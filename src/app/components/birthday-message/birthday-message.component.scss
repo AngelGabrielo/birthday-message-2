@@ -1,0 +1,203 @@
+@charset "UTF-8";
+@keyframes typed {
+  /* FELIZ CUMPLEAÑOS */
+  0%, 1.92% {
+    content: "F";
+  }
+  1.92%, 3.84% {
+    content: "FE";
+  }
+  3.84%, 5.76% {
+    content: "FEL";
+  }
+  5.76%, 7.68% {
+    content: "FELI";
+  }
+  7.68%, 9.6% {
+    content: "FELIZ";
+  }
+  9.6%, 11.52% {
+    content: "FELIZ ";
+  }
+  11.52%, 13.44% {
+    content: "FELIZ C";
+  }
+  13.44%, 15.36% {
+    content: "FELIZ CU";
+  }
+  15.36%, 17.28% {
+    content: "FELIZ CUM";
+  }
+  17.28%, 19.2% {
+    content: "FELIZ CUMP";
+  }
+  19.2%, 21.12% {
+    content: "FELIZ CUMPL";
+  }
+  21.12%, 23.04% {
+    content: "FELIZ CUMPLE";
+  }
+  23.04%, 24.96% {
+    content: "FELIZ CUMPLEA";
+  }
+  24.96%, 26.88% {
+    content: "FELIZ CUMPLEAÑ";
+  }
+  26.88%, 28.8% {
+    content: "FELIZ CUMPLEAÑO";
+  }
+  28.8%, 30.72% {
+    content: "FELIZ CUMPLEAÑOS";
+  }
+  30.72%, 35.52% {
+    content: "FELIZ CUMPLEAÑOS";
+  }
+  /* Borrar FELIZ CUMPLEAÑOS */
+  35.52%, 37.44% {
+    content: "FELIZ CUMPLEAÑ";
+  }
+  37.44%, 39.36% {
+    content: "FELIZ CUMPLEAÑ";
+  }
+  39.36%, 41.28% {
+    content: "FELIZ CUMPLEA";
+  }
+  41.28%, 43.2% {
+    content: "FELIZ CUMPLE";
+  }
+  43.2%, 45.12% {
+    content: "FELIZ CUMPL";
+  }
+  45.12%, 47.04% {
+    content: "FELIZ CUMP";
+  }
+  47.04%, 48.96% {
+    content: "FELIZ CUM";
+  }
+  48.96%, 50.88% {
+    content: "FELIZ CU";
+  }
+  50.88%, 52.8% {
+    content: "FELIZ C";
+  }
+  52.8%, 54.72% {
+    content: "FELIZ ";
+  }
+  54.72%, 56.64% {
+    content: "FELIZ";
+  }
+  56.64%, 58.56% {
+    content: "FELI";
+  }
+  58.56%, 60.48% {
+    content: "FEL";
+  }
+  60.48%, 62.4% {
+    content: "FE";
+  }
+  62.4%, 64.32% {
+    content: "F";
+  }
+  64.32%, 66.24% {
+    content: "";
+  }
+
+  /* ERES INCREÍBLE */
+  66.24%, 68.16% {
+    content: "E";
+  }
+  68.16%, 70.08% {
+    content: "ER";
+  }
+  70.08%, 72% {
+    content: "ERE";
+  }
+  72%, 73.92% {
+    content: "ERES";
+  }
+  73.92%, 75.84% {
+    content: "ERES ";
+  }
+  75.84%, 77.76% {
+    content: "ERES I";
+  }
+  77.76%, 79.68% {
+    content: "ERES IN";
+  }
+  79.68%, 81.6% {
+    content: "ERES INC";
+  }
+  81.6%, 83.52% {
+    content: "ERES INCR";
+  }
+  83.52%, 85.44% {
+    content: "ERES INCRE";
+  }
+  85.44%, 87.36% {
+    content: "ERES INCREÍ";
+  }
+  87.36%, 89.28% {
+    content: "ERES INCREÍB";
+  }
+  89.28%, 91.2% {
+    content: "ERES INCREÍBL";
+  }
+  91.2%, 93.12% {
+    content: "ERES INCREÍBLE";
+  }
+  93.12%, 94.22% {
+    content: "ERES INCREÍBLE ";
+  }
+  94.22%, 95.34% {
+    content: "ERES INCREÍBLE :";
+  }
+  95.34%, 100% {
+    content: "ERES INCREÍBLE :3";
+  }
+}
+@-webkit-keyframes beam-blink {
+  75% {
+    border-color: transparent;
+  }
+}
+@keyframes beam-blink {
+  75% {
+    border-color: transparent;
+  }
+}
+* {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.message {
+  position: absolute;
+  color: #FFFFFF;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.message::after {
+    content: "​";
+    position: relative;
+    top: -13px;
+    display: inline-block;
+    padding-right: 3px;
+    padding-right: calc(3px + 0.1vw);
+    border-right: 10px solid rgba(247, 247, 247, 0.75);
+    border-right: calc(1.1vw + 4px) solid rgba(247, 247, 247, 0.75);
+    text-shadow: 0 0 5px rgba(247, 247, 247, 0.75);
+    white-space: nowrap;
+    -webkit-animation: typed 10s linear 0.5s infinite, beam-blink 0.5s infinite;
+            animation: typed 10s linear 0.5s infinite, beam-blink 0.5s infinite;
+  }
+  @media (max-width: 575px) {
+    .message::after {
+      top: -33px;
+    }
+  }
+  
